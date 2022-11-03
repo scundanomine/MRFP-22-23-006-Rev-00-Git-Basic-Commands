@@ -11,12 +11,18 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Git Commands</title>
+    <style>
+            body{
+                background: black;
+                color: aqua;
+                margin: 10px;
+            }
+    </style>
 </head>
 
 <body>
-    <h1 class="text-center">Some GIT Most Basic Commands</h1>
-    <br>
-    <br>
+    <h4 class="text-center">Some GIT Most Basic Commands</h4>
+
     <div class="container" id="git">
         git status
         <br>
@@ -27,9 +33,61 @@
         git push origin main
     </div>
     <div class="container">
-        <br>
         <button type="button" class="btn btn-primary" onclick="jee()">Copy!</button>
     </div>
+    <hr>
+
+    <!-- ************************Code for adding the copy content 1***************** -->
+
+    <div class="container" id="git1">
+        git branch -M main
+    </div>
+    <div class="container">
+
+        <button type="button" class="btn btn-primary" onclick="jee1()">Copy!</button>
+    </div>
+    <hr>
+    <!-- *****************************End********************************************** -->
+
+    <!-- ************************Code for adding the copy content 2***************** -->
+
+    <div class="container" id="git2">
+        git push origin main
+    </div>
+    <div class="container">
+
+        <button type="button" class="btn btn-primary" onclick="jee2()">Copy!</button>
+    </div>
+    <hr>
+    <!-- *****************************End********************************************** -->
+
+    <!-- ************************Code for adding the copy content 3***************** -->
+
+    <div class="container" id="git3">
+        git pull origin main
+    </div>
+    <div class="container">
+
+        <button type="button" class="btn btn-primary" onclick="jee3()">Copy!</button>
+    </div>
+    <hr>
+    <!-- *****************************End********************************************** -->
+
+
+
+    <!-- ************************Code for adding the copy content 4***************** -->
+
+    <div class="container" id="git4">
+        git remote add origin https://github.com/scundanomine/-ProjectName-.git
+        <br>
+        git clone https://github.com/scundanomine/-ProjectName-.git
+    </div>
+    <div class="container">
+        <br>
+        <button type="button" class="btn btn-primary" onclick="jee4()">Copy!</button>
+    </div>
+    <hr>
+    <!-- *****************************End********************************************** -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -44,11 +102,36 @@
         crossorigin="anonymous"></script>
 </body>
 <script>
-    let a = document.getElementById("git").innerText
+    let zaz = document.getElementById("git").innerText
     function jee() {
+        navigator.clipboard.writeText(zaz);
+    }
+
+    //**********************************Copy Content Handler1****************************
+    let a = document.getElementById("git1").innerText
+    function jee1() {
         navigator.clipboard.writeText(a);
     }
-    //this is awesome
+
+    //**********************************Copy Content Handler2****************************
+    let b = document.getElementById("git2").innerText
+    function jee2() {
+        navigator.clipboard.writeText(b);
+    }
+
+    //**********************************Copy Content Handler3****************************
+    let c = document.getElementById("git3").innerText
+    function jee3() {
+        navigator.clipboard.writeText(c);
+    }
+
+    //**********************************Copy Content Handler3****************************
+    let d = document.getElementById("git4").innerText
+    function jee4() {
+        navigator.clipboard.writeText(d);
+    }
+
+
 
 </script>
 
